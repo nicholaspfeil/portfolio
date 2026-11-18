@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicholas Pfeil | Data Science, UC San Diego</title>
+  <meta name="description" content="Nicholas Pfeil: Data Science student at UC San Diego (ML/AI). Projects in real-time data pipelines, machine learning, and AI security research.">
+  <meta name="author" content="Nicholas Pfeil">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph (link previews on LinkedIn, Slack, iMessage) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nicholas Pfeil | Data Science, UC San Diego">
+  <meta property="og:description" content="Data Science student at UC San Diego (ML/AI). Building ML apps and AI security research.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Text-art map of the San Diego coast with a ship's track ending where its signal is lost near a marine reserve.">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO after first deploy (must be full URLs):
+  <meta property="og:url" content="https://YOUR-DOMAIN/">
+  <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png">
+  -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500..700&family=Schibsted+Grotesk:wght@400..700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Sections">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#activities">Activities</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header class="site-header">
+      <h1>Nicholas Pfeil</h1>
+      <p class="tagline">Data Science student at UC San Diego (ML/AI specialization) · building ML apps and AI security research</p>
+      <p class="location">San Diego, CA</p>
+      <ul class="contact-links">
+        <li><a href="https://github.com/nicholaspfeil">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/nicholas-pfeil">LinkedIn</a></li>
+        <li><a href="mailto:nicholaspfe23@gmail.com">Email</a></li>
+        <li><a href="resume.pdf">Resume (PDF)</a></li>
+      </ul>
+    </header>
+
+    <main id="main">
+      <section id="about" class="block" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <div class="block-body">
+          <p class="lede">I'm a first-year Data Science student at UC San Diego, specializing in machine learning and AI. I build end-to-end data projects, from real-time pipelines and ML models to deployed web apps, and I'm currently running a 12-month study on security in the Model Context Protocol (MCP) ecosystem. I'm looking for software engineering, data science, and ML internships.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="block" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="block-body">
+          <article class="card">
+            <div class="row">
+              <h3>Dark Ship Detector</h3>
+              <p class="date">Oct 2026</p>
+            </div>
+            <p class="context">c0mpiled-16 Hackathon at UCSD (solo)</p>
+            <ul class="bullets">
+              <li>Real-time system that streams live ship-tracking (AIS) data off San Diego and flags vessels that go silent near a marine reserve, a sign of possible illegal fishing.</li>
+              <li>Risk score that cut ~490 daily silences to ~17 actionable alerts (~96% fewer) and caught 92% of simulated dark ships injected into real traffic.</li>
+              <li>Alerts arrive as spoken phone calls through Twilio; dispatchers respond by keypad, no screen needed.</li>
+            </ul>
+            <div class="card-foot">
+              <ul class="tags" aria-label="Tech stack">
+                <li>Python</li><li>pandas</li><li>WebSockets</li><li>Twilio API</li><li>Twilio Studio</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/nicholaspfeil/dark-ship-detector">GitHub<span class="visually-hidden">: Dark Ship Detector</span></a>
+                <a href="https://www.youtube.com/watch?v=QU8d2ByB6kU">Demo video<span class="visually-hidden">: Dark Ship Detector</span></a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="row">
+              <h3>MCP Ecosystem Security Study</h3>
+              <p class="date">Sep 2026 – Present</p>
+            </div>
+            <p class="context">Independent Research</p>
+            <ul class="bullets">
+              <li>12-month longitudinal study of whether vulnerabilities in public MCP servers (which connect AI assistants to external tools) get fixed, and how fast.</li>
+              <li>Paginated Python collector for the official MCP Registry API that captures all 28,625 published servers as timestamped JSONL.</li>
+              <li>Weekly full-registry snapshots so delisted servers stay detectable for time-to-remediation (survival) analysis.</li>
+            </ul>
+            <div class="card-foot">
+              <ul class="tags" aria-label="Tech stack">
+                <li>Python</li><li>REST APIs</li><li>JSON</li><li>Git</li>
+              </ul>
+              <a href="https://github.com/nicholaspfeil/mcp-longitudinal-study">GitHub<span class="visually-hidden">: MCP Ecosystem Security Study</span></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="row">
+              <h3>Pokémon Predictor</h3>
+              <p class="date">Aug – Sep 2026</p>
+            </div>
+            <p class="context">UCSD SPIS Capstone (2-person team)</p>
+            <ul class="bullets">
+              <li>Deployed ML web app forecasting card prices ~60 days out; XGBoost regression reached 7% error, R² 0.42.</li>
+              <li>Data pipeline integrating three REST APIs to ingest, clean, and normalize real-time and historical prices.</li>
+              <li>Validated with cross-validation; continuous deployment from GitHub to Vercel.</li>
+            </ul>
+            <div class="card-foot">
+              <ul class="tags" aria-label="Tech stack">
+                <li>Python</li><li>XGBoost</li><li>scikit-learn</li><li>pandas</li><li>REST APIs</li><li>Git</li><li>Vercel</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/nicholaspfeil/pokemon-card-price-predictor">GitHub<span class="visually-hidden">: Pokémon Predictor</span></a>
+                <a href="https://pokemon-predictor-fork.vercel.app/">Live site<span class="visually-hidden">: Pokémon Predictor</span></a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="block" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <div class="block-body">
+          <article class="entry">
+            <div class="row">
+              <h3>Project Rainforest</h3>
+              <p class="date">Oct – Dec 2024</p>
+            </div>
+            <p class="context">Data &amp; Prompt Engineer Intern, Fremont, CA</p>
+            <p>Benchmarked proprietary LLMs against ChatGPT on Python financial-reasoning tests, red-teamed models with adversarial prompts, and analyzed outputs from 50+ evaluation datasets to document hallucinations and failure patterns.</p>
+          </article>
+
+          <article class="entry">
+            <div class="row">
+              <h3>EliteSEO</h3>
+              <p class="date">Jun – Sep 2024</p>
+            </div>
+            <p class="context">Growth Marketing Associate, Fremont, CA</p>
+            <p>Audited client websites with Python scripts and Google Search Console, and explained SEO findings in 100+ daily client conversations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="block" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="block-body">
+          <article class="entry">
+            <div class="row">
+              <h3>University of California, San Diego</h3>
+              <p class="date">Expected Jun 2030</p>
+            </div>
+            <p class="context">B.S. Data Science, Specialization in ML/AI</p>
+            <p>Coursework: DSC 10 (Principles of Data Science), MATH 20A (Calculus), VIS 42 (Creative Coding)</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="block" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="block-body">
+          <dl class="skills">
+            <dt>Programming</dt>
+            <dd><ul class="tags"><li>Python</li><li>JavaScript (p5.js)</li><li>Java</li></ul></dd>
+
+            <dt>Data Science</dt>
+            <dd><ul class="tags"><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>XGBoost</li><li>regression</li><li>cross-validation</li><li>anomaly detection</li><li>data visualization</li></ul></dd>
+
+            <dt>AI &amp; ML</dt>
+            <dd><ul class="tags"><li>LLMs</li><li>prompt engineering</li><li>LLM evaluation</li><li>red teaming</li><li>AI security</li></ul></dd>
+
+            <dt>Tools</dt>
+            <dd><ul class="tags"><li>Git</li><li>GitHub</li><li>REST APIs</li><li>WebSockets</li><li>Twilio</li><li>Vercel</li><li>Jupyter</li><li>ETL pipelines</li></ul></dd>
+
+            <dt>Languages</dt>
+            <dd><ul class="tags"><li>English (native)</li><li>Thai (native)</li><li>Spanish (fluent)</li></ul></dd>
+          </dl>
+        </div>
+      </section>
+
+      <section id="activities" class="block" aria-labelledby="activities-heading">
+        <h2 id="activities-heading">Leadership &amp; Activities</h2>
+        <div class="block-body">
+          <ul class="activities">
+            <li>
+              <div class="row">
+                <h3>UCSD SPIS</h3>
+                <p class="date">Aug – Sep 2026</p>
+              </div>
+              <p class="context">Selected Participant</p>
+              <p>Limited-admission 5-week CS/AI intensive (Summer Program for Incoming Students) run by UCSD CSE.</p>
+            </li>
+            <li>
+              <div class="row">
+                <h3>Special Olympics</h3>
+                <p class="date">Dec 2024 – Present</p>
+              </div>
+              <p class="context">Volunteer Tennis Coach</p>
+              <p>Coach 40 athletes, ages 9–60.</p>
+            </li>
+            <li>
+              <div class="row">
+                <h3>Live Oak Mock Trial</h3>
+                <p class="date">2023 – 2026</p>
+              </div>
+              <p class="context">Co-Founder &amp; Co-President</p>
+              <p>Grew the program to 31 members; earned Most Valuable Attorney.</p>
+            </li>
+            <li>
+              <div class="row">
+                <h3>Peer Counseling</h3>
+                <p class="date">2024 – 2026</p>
+              </div>
+              <p class="context">President</p>
+              <p>Launched county-certified workshops reaching 200+ students.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <ul class="contact-links">
+        <li><a href="https://github.com/nicholaspfeil">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/nicholas-pfeil">LinkedIn</a></li>
+        <li><a href="mailto:nicholaspfe23@gmail.com">Email</a></li>
+        <li><a href="resume.pdf">Resume (PDF)</a></li>
+      </ul>
+      <p class="updated">Last updated Nov 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
